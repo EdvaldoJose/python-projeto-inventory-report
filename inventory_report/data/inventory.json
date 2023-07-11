@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "product_name": "Nicotine Polacrilex",
+    "company_name": "Target Corporation",
+    "manufacturing_date": "2021-02-18",
+    "expiration_date": "2023-09-17",
+    "serial_number": "CR25 1551 4467 2549 4402 1",
+    "storage_instructions": "instrucao 1"
+  },
+  {
+    "id": "2",
+    "product_name": "fentanyl citrate",
+    "company_name": "Target Corporation",
+    "manufacturing_date": "2020-12-06",
+    "expiration_date": "2023-12-25",
+    "serial_number": "FR29 5951 7573 74OY XKGX 6CSG D20",
+    "storage_instructions": "instrucao 2"
+  },
+  {
+    "id": "3",
+    "product_name": "NITROUS OXIDE",
+    "company_name": "Galena Biopharma",
+    "manufacturing_date": "2020-12-22",
+    "expiration_date": "2024-11-07",
+    "serial_number": "CZ09 8588 0858 8435 9140 2695",
+    "storage_instructions": "instrucao 3"
+  },
+  {
+    "id": "4",
+    "product_name": "Norepinephrine Bitartrate",
+    "company_name": "Cantrell Drug Company",
+    "manufacturing_date": "2020-12-24",
+    "expiration_date": "2025-08-19",
+    "serial_number": "MT04 VJPY 0772 3DCE K8U3 WIVL VV3K AEN",
+    "storage_instructions": "instrucao 4" 
+  },
+  {
+    "id": "5",
+    "product_name": "ACETAMINOPHEN, PHENYLEPHRINE HYDROCHLORIDE",
+    "company_name": "Moore Medical LLC",
+    "manufacturing_date": "2021-04-14",
+    "expiration_date": "2025-01-14",
+    "serial_number": "LV23 ELDS 2GD5 X19P VCSI K",
+    "storage_instructions": "instrucao 5" 
+  },
+  {
+    "id": "6",
+    "product_name": "Silicea Belladonna",
+    "company_name": "Cantrell Drug Company",
+    "manufacturing_date": "2021-07-18",
+    "expiration_date": "2024-10-05",
+    "serial_number": "FR57 7414 7254 046O IHVX AV6L H71",
+    "storage_instructions": "instrucao 6" 
+  },
+  {
+    "id": "7",
+    "product_name": "Spironolactone",
+    "company_name": "REMEDYREPACK",
+    "manufacturing_date": "2021-07-17",
+    "expiration_date": "2023-11-18",
+    "serial_number": "SM28 B981 5118 903W JY0C 5KVO 3QD",
+    "storage_instructions": "instrucao 7" 
+  },
+  {
+    "id": "8",
+    "product_name": "Aspirin",
+    "company_name": "Galena Biopharma",
+    "manufacturing_date": "2021-02-22",
+    "expiration_date": "2024-03-14",
+    "serial_number": "KZ63 800H NM4B ZOWB YYUI",
+    "storage_instructions": "instrucao 8" 
+  },
+  {
+  "id": "9",
+  "product_name": "eucalyptus globulus",
+  "company_name": "Target Corporation",
+  "manufacturing_date": "2020-09-06",
+  "expiration_date": "2024-05-21",
+  "serial_number": "GT74 LHWJ FCXL JNQT ZCXM 4761 GWSP",
+  "storage_instructions": "instrucao 9"
+  },
+  {
+    "id": "10",
+    "product_name": "Titanium Dioxide",
+    "company_name": "Target Corporation",
+    "manufacturing_date": "2020-12-08",
+    "expiration_date": "2023-12-08",
+    "serial_number": "FR29 5791 5333 58XR G4PR IG28 D08",
+    "storage_instructions": "instrucao 10"
+  }
+]

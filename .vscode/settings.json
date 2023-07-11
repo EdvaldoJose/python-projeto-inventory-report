@@ -1,0 +1,29 @@
+{
+    "python.testing.pytestArgs": [
+        "--ignore-unknown-dependency"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.blackArgs": [
+        "-l 79"
+    ],
+    "python.testing.pytestPath": ".venv/bin/pytest",
+    "python.formatting.provider": "black",
+    "python.linting.mypyArgs": [
+        "--follow-imports=silent",
+        "--ignore-missing-imports",
+        "--show-column-numbers",
+        "--strict",
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyPath": ".venv/bin/mypy",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportGeneralTypeIssues": "none",
+        "reportUnknownArgumentType": "none",
+    }
+}
