@@ -7,4 +7,3 @@ def process_report_request(file_paths: List[str], report_type: str) -> str:
     and returns the result.
     """
     raise NotImplementedError
-# pass
