@@ -1,3 +1,4 @@
+import csv
 import json
 from abc import ABC, abstractmethod
 from typing import Dict, Type
@@ -40,8 +41,29 @@ class JsonImporter(Importer):
                 )
 
 
-class CsvImporter:
-    pass
+class CsvImporter(Importer):
+    def import_data(self) -> list[Product]:
+        products = []
+
+        try:
+            with open(self.path, encoding="utf-8") as file:
+                data_products = csv.reader(file, delimiter=",")
+                header, *data = data_products
+            for line in data:
+                new_product = Product(
+                    line[0],
+                    line[1],
+                    line[2],
+                    line[3],
+                    line[4],
+                    line[5],
+                    line[6],
+                )
+                products.append(new_product)
+
+            return products
+        except FileNotFoundError:
+            raise FileNotFoundError(f"missing file: {self.path}")
 
 
 # Não altere a variável abaixo
