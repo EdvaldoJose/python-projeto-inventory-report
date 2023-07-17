@@ -17,7 +17,7 @@
         "--show-column-numbers",
         "--strict",
     ],
-    "python.linting.mypyEnabled": true,
+    "python.linting.mypyEnabled": false,
     "python.linting.mypyPath": ".venv/bin/mypy",
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
