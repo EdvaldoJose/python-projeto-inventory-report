@@ -10,8 +10,8 @@ class CompleteReport(SimpleReport):
             stock_by_company = Counter(
                 product.company_name for product in inventory.data
             )
-        for company, quantity in stock_by_company.items():
-            companies += f"- {company}: {quantity}\n"
+            for company, quantity in stock_by_company.items():
+                companies += f"- {company}: {quantity}\n"
 
         return (super().generate() + "Stocked products by company:\n" +
                 companies)
