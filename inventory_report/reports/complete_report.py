@@ -11,7 +11,7 @@ class CompleteReport(SimpleReport):
                 product.company_name for product in inventory.data
             )
         for company, quantity in stock_company.items():
-            companies += (f"{company}:{quantity}")
+            companies += f"{company}: {quantity}\n"
 
         return (super().generate() + "Stocked products by company:\n" +
                 companies)
