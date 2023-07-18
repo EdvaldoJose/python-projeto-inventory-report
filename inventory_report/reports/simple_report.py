@@ -36,7 +36,7 @@ class SimpleReport(Report):
         # ).most_common()
 
         return (
-            f"Oldest manufacturing date:{sorted_man_d[0].manufacturing_date}\n"
+            f"Oldest manufacturing date: {sorted_man_d[0].manufacturing_date}\n"
             f"Closest expiration date: {sorted_expirat_d[0].expiration_date}\n"
             f"Company with the largest inventory: {company.company_name}\n"
             # f"Company with the largest inventory: {stock_company[0][0]}"
