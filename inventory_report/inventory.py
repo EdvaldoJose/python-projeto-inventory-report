@@ -4,7 +4,7 @@ from inventory_report.product import Product
 
 
 class Inventory:
-    def __init__(self, data: Optional[list[Product]]) -> None:
+    def __init__(self, data: Optional[list[Product]] = None) -> None:
         self.__data = data or []
 
     @property

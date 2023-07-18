@@ -16,7 +16,7 @@ class SimpleReport(Report):
 
     def generate(self) -> str:
         for inventory in self.inventories:
-            sorted_man_dte = sorted(
+            sorted_man_d = sorted(
                 inventory.data, key=lambda prod: prod.manufacturing_date
             )
 
@@ -26,7 +26,7 @@ class SimpleReport(Report):
             else:
                 return str(date.max)
 
-        sorted_expirat_dte = sorted(
+        sorted_expirat_d = sorted(
             inventory.data, key=expiration_date_key)
 
         company = max(inventory.data, key=lambda prod: prod.company_name)
@@ -36,8 +36,8 @@ class SimpleReport(Report):
         # ).most_common()
 
         return (
-            f"Oldest manufacturing date:{sorted_man_dte[0].manufacturing_date}"
-            f"Closest expiration date: {sorted_expirat_dte[0].expiration_date}"
-            f"Company with the largest inventory: {company.company_name}"
+            f"Oldest manufacturing date:{sorted_man_d[0].manufacturing_date}\n"
+            f"Closest expiration date: {sorted_expirat_d[0].expiration_date}\n"
+            f"Company with the largest inventory: {company.company_name}\n"
             # f"Company with the largest inventory: {stock_company[0][0]}"
         )

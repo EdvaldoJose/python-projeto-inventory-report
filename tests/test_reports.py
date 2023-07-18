@@ -5,11 +5,8 @@ import pytest
 from inventory_report.inventory import Inventory
 from inventory_report.product import Product
 from inventory_report.reports import CompleteReport, Report, SimpleReport
-from tests.conftest import (
-    CLOSEST_DATE,
-    COMPANY_WITH_THE_LARGEST_INVENTORY,
-    OLDEST_DATE,
-)
+from tests.conftest import (CLOSEST_DATE, COMPANY_WITH_THE_LARGEST_INVENTORY,
+                            OLDEST_DATE)
 
 
 @pytest.mark.parametrize(
@@ -121,7 +118,7 @@ def test_generate_returns_correct_output_complete_report(
             f"Closest expiration date: {CLOSEST_DATE}\n"
             "Company with the largest inventory: "
             f"{COMPANY_WITH_THE_LARGEST_INVENTORY}\n"
-            "Stocked products by company:\n",
+            "Stocked products by company:\n"
         )
         expected = [
             f"- {COMPANY_WITH_THE_LARGEST_INVENTORY}: 2\n",
