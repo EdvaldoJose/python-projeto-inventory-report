@@ -21,12 +21,12 @@ def test_product_report() -> None:
     )
 
     expected = (
-        f"The product {id} - {product_name}"
-        f"with serial number {serial_number}"
-        f"manufactured in {manufacturing_date}"
-        f"by the company {company_name}"
-        f"valid until {expiration_date}"
-        f"must be stored according to the following instructions:"
+        f"The product {id} - {product_name} "
+        f"with serial number {serial_number} "
+        f"manufactured on {manufacturing_date} "
+        f"by the company {company_name} "
+        f"valid until {expiration_date} "
+        f"must be stored according to the following instructions: "
         f"{storage_instructions}."
     )
 
