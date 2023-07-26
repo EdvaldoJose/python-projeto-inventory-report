@@ -1,4 +1,4 @@
-# from collections import Counter
+from collections import Counter
 from datetime import date
 from typing import List
 
@@ -16,7 +16,7 @@ class SimpleReport(Report):
 
     def generate(self) -> str:
         for inventory in self.inventories:
-            sorted_man_d = sorted(
+            sorted_ma_d = sorted(
                 inventory.data, key=lambda prod: prod.manufacturing_date
             )
 
@@ -29,20 +29,12 @@ class SimpleReport(Report):
         sorted_expirat_d = sorted(
             inventory.data, key=expiration_date_key)
 
-        company = max(inventory.data, key=lambda prod: prod.company_name)
-
-        # stock_by_company = Counter(
-        #     Product.company_name for product in inventory.data
-        # ).most_common()
-
-        # companies = ""
-        # for company, quantity in stock_by_company:
-        #     companies += f"- {company}: {quantity}\n"
+        stock_by_company = Counter(
+            product.company_name for product in inventory.data
+        ).most_common()
 
         return (
-            f"Oldest manufacturing date: {sorted_man_d[0].manufacturing_date}\n"
+            f"Oldest manufacturing date: {sorted_ma_d[0].manufacturing_date}\n"
             f"Closest expiration date: {sorted_expirat_d[0].expiration_date}\n"
-            f"Company with the largest inventory: {company.company_name}\n"
-            # f"Stoked products by company:\n{company}"
-            # f"Company with the largest inventory: {stock_by_company[0][0]}"
+            f"Company with the largest inventory: {stock_by_company[0][0]}\n"
         )

@@ -1,3 +1,20 @@
+# from collections import Counter
+
+# from inventory_report.reports.simple_report import SimpleReport
+
+
+# class CompleteReport(SimpleReport):
+#     def generate(self) -> str:
+#         companies = ""
+#         for inventory in self.inventories:
+#             stock_by_company = Counter(
+#                 product.company_name for product in inventory.data
+#             )
+#             for company, quantity in stock_by_company.items():
+#                 companies += f"- {company}: {quantity}\n"
+
+#         return (super().generate() + "Stocked products by company:\n" +
+#                 companies)
 from collections import Counter
 
 from inventory_report.reports.simple_report import SimpleReport
@@ -10,8 +27,9 @@ class CompleteReport(SimpleReport):
             stock_by_company = Counter(
                 product.company_name for product in inventory.data
             )
-            for company, quantity in stock_by_company.items():
-                companies += f"- {company}: {quantity}\n"
+        for company, quantity in stock_by_company.items():
+            companies += f"- {company}: {quantity}\n"
 
-        return (super().generate() + "Stocked products by company:\n" +
-                companies)
+        return (
+            super().generate() + "Stocked products by company:\n" + companies
+        )
